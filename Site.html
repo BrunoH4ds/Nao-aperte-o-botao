@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nao Aperte</title>
+  <link rel="stylesheet" href="assets/Style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+  <link rel="icon" href="assets/Icon/radiobox-marked.svg">
+</head>
+<body onload="inicio()">
+  <h1>Não Aperte o Botão</h1>
+  <div class="container">
+    <div class="reloj-container">
+      <div class="reloj" id="Horas">00</div>
+      <div class="reloj" id="Minutos">:00</div>
+      <div class="reloj" id="Segundos">:00</div>
+      <div class="reloj" id="Centesimas">:00</div>
+    </div>
+    <div id="button-container">
+      <button onclick="splitButton()" onmouseover="Nao_clique()" onmouseout="Clique_Aqui()" id="btn">Clique Aqui</button>
+    </div>
+  </div>
+  <script src="assets/Funcoes.js"></script>
+</body>
+</html>

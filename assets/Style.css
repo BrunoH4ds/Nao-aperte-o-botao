@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(45, 45, 45);
+  color: white;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 50px;
+  text-shadow: 0 0 20px white;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  width: 40%;
+  max-width: 600px;
+  margin-top: 100px;
+  padding: 25px;
+  height: 300px;
+  border-radius: 20pt;
+  box-shadow: 0 0 20px white;
+}
+
+.reloj-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.reloj {
+  color: black;
+  font-size: 70px;
+  text-shadow: 0 0 10px black;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+button {
+  font-size: 32px;
+  color: white;
+  padding: 30px 150px;
+  border: 0px;
+  border-radius: 50px;
+  background-color: black;
+  box-shadow: 0 0 20px black;
+  text-shadow: 0 0 20px white;
+  cursor: pointer;
+}
+
+button:hover {
+  animation-name: Botao;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: red;
+  box-shadow: 0 0 20px red;
+}
+
+@keyframes Botao {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.split-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+#btn-yes, #btn-no {
+  padding: 20px 50px;
+  background-color: black;
+  color: white;
+  text-shadow: 0 0 20px white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#btn-yes:hover, #btn-no:hover {
+  background-color: red;
+  box-shadow: 0 0 10px red;
+}
+
+@media (max-height: 1335px) {
+  button {
+    padding: 20px 100px;
+    font-size: 30px;
+  }
+
+  #btn-yes, #btn-no {
+    padding: 18px 40px;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .container {
+    width: 70%;
+    margin-top: 80px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .reloj {
+    font-size: 80px;
+  }
+
+  button {
+    font-size: 45px;
+    padding: 25px 120px;
+  }
+
+  #btn-yes, #btn-no {
+    padding: 18px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+    margin-top: 60px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .reloj {
+    font-size: 60px;
+  }
+
+  button {
+    font-size: 35px;
+    padding: 20px 100px;
+  }
+
+  #btn-yes, #btn-no {
+    padding: 15px 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    margin-top: 40px;
+    padding: 10px;
+    height: 30%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .reloj {
+    font-size: 55px;
+  }
+
+  button {
+    font-size: 30px;
+    padding: 15px 60px;
+  }
+
+  #btn-yes, #btn-no {
+    padding: 12px 30px;
+  }
+}
